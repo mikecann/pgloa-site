@@ -9,8 +9,8 @@ backend:
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
 local_backend: true
-media_folder: static/img
-public_folder: /img
+media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: "blog"
@@ -30,8 +30,9 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown", buttons: ["bold", "italic", "link", "image", "file"] }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "File", name: "file", widget: "file" }
 
   - name: "pages"
     label: "Pages"
@@ -244,3 +245,11 @@ collections:
                   },
                 ],
             }
+
+  - name: "files" 
+    label: "Files" 
+    folder: "static/assets/files"
+    create: true 
+    fields: 
+      - { label: "File", name: "attachment", widget: "file" }
+      - { label: "Description", name: "description", widget: "string" }
