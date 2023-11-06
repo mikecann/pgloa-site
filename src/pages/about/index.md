@@ -7,4 +7,4 @@ You might be an artist who would like to introduce yourself and your work here o
 
 
 
-H﻿ere [is a link to something](static/img/foo.grist):
+H﻿ere [is a link to something](static/assets/sdfasdf.grist):
