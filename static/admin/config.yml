@@ -245,11 +245,3 @@ collections:
                   },
                 ],
             }
-
-  - name: "files"
-    label: "Files"
-    folder: "static/assets/files"
-    create: true
-    fields:
-      - { label: "File", name: "attachment", widget: "file" }
-      - { label: "Description", name: "description", widget: "string" }
