@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
+import logo from "../assets/logo.svg";
+import facebook from "../assets/social/facebook.svg";
+import instagram from "../assets/social/instagram.svg";
+import twitter from "../assets/social/twitter.svg";
+import vimeo from "../assets/social/vimeo.svg";
 
 const Footer = class extends React.Component {
   render() {
